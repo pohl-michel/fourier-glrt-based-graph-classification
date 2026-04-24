@@ -7,7 +7,7 @@ This repository contains work on binary classification of graph-structured data 
 
 In this project, I implement the GLRT rule in the bandlimited graph-signal setting and apply it to Alzheimer's disease detection from PET images. Each brain region corresponds to a graph node and is described by a linear combination of five relevant statistical features following the design proposed by Garali et al. (["Region-based brain selection and classification on pet images for Alzheimer's disease computer aided diagnosis"](https://doi.org/10.1109/ICIP.2015.7351045), International Conference on Image Processing, 2015).
 
- This project was carried out during my engineering studies at [Centrale Méditerranée](https://www.centrale-mediterranee.fr/en) in collaboration with [Fresnel Institute](https://www.fresnel.fr/wp/en/). The full technical report in French is available [here](graph_classification_report_french_2016.pdf).
+ This project was carried out during my engineering studies at [Centrale Méditerranée](https://www.centrale-mediterranee.fr/en) in collaboration with [Fresnel Institute](https://www.fresnel.fr/wp/en/). The full technical report in French is available [here](graph_classification_report_french_2016.pdf), and the corresponding blog article in English can be accessed [here](https://pohl-michel.github.io/blog/articles/fourier-glrt-graph-classification/article.html).
 
 <br>
 <div align="center">
