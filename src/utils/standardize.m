@@ -1,4 +1,4 @@
-function [ TenseurSain5Param, TenseurMA5Param] = standardize(healthy_tensor_path, diseased_tensor_path)
+function [ TenseurSain5Param, TenseurMA5Param] = standardize(subjects_data_path)
 % Résumé : Cette fonction charge deux tenseurs de données, un pour les
 % patients sains et un pour les patients malades. La première composante i
 % représente le nombre de régions (116 régions), la deuxième composante le
@@ -12,10 +12,7 @@ function [ TenseurSain5Param, TenseurMA5Param] = standardize(healthy_tensor_path
 
 
 %% Chargement des deux matrices de données initiales
-
-load(healthy_tensor_path);
-load(diseased_tensor_path);
-
+load(subjects_data_path);
 S = size(TenseurSain5Param, 3);
 M = size(TenseurMA5Param, 3);
 

@@ -18,14 +18,13 @@ alpha = [0.2;0.2;0.2;0.2;0.2];
 % Valeur de K qui correspond au alpha que l'on souhaite tester
 K = 3;
 
-healthy_tensor_path = "data/heathy_subjects_data.mat";
-diseased_tensor_path = "data/patients_data.mat";
+subjects_data_path = "subjects_data.mat";
 
 
 %% A NE PAS CHANGER : 
 
 % Chargement et normalisation des tenseurs en entrée
-[T_norm_S, T_norm_M] = standardize(healthy_tensor_path, diseased_tensor_path);
+[T_norm_S, T_norm_M] = standardize(subjects_data_path);
 
 % Nombre de patients dans la base précédente
 s = size(T_norm_S, 3);
