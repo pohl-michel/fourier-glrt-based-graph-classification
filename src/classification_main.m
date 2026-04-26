@@ -79,7 +79,7 @@ end
 
 % Mise à jour pour les sujets vraiment sains
 for k = 1:s
-    if vec_vrais(k) >1
+    if vec_vrais(k) >1 % sujet classé sain
         VN = VN +1;
     else
         FP = FP + 1;
@@ -88,7 +88,7 @@ end
 
 % Mise à jour pour les sujets vraiment malades
 for k = s+1:s+m
-    if vec_vrais(k) >1
+    if vec_vrais(k) >1 % sujet classé sain
         FN = FN +1;
     else
         VP = VP + 1;
@@ -100,3 +100,4 @@ end
 sensitivity = VP/(VP+FN)
 specificity = VN/(VN+FP)
 false_pos_frac = 1 - specificity
+F1_score = 2*VP/(2*VP+FP+FN)
