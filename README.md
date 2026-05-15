@@ -7,7 +7,7 @@ This repository contains work on binary classification of graph-structured data 
 
 In this project, I implement the GLRT rule in the bandlimited graph-signal setting and apply it to Alzheimer's disease detection from PET images. Each brain region corresponds to a graph node and is described by a linear combination of five statistical features following the design proposed by Garali et al. (["Region-based brain selection and classification on PET images for Alzheimer's disease computer aided diagnosis"](https://doi.org/10.1109/ICIP.2015.7351045), IEEE International Conference on Image Processing, 2015).
 
- This project was carried out during my engineering studies at [Centrale Méditerranée](https://www.centrale-mediterranee.fr/en) in collaboration with [Fresnel Institute](https://www.fresnel.fr/wp/en/). The full technical report in French is available [here](graph_classification_report_french_2016.pdf), and an English blog article can be accessed [here](https://pohl-michel.github.io/blog/articles/fourier-glrt-graph-classification/article.html); a summary is provided in this README.
+This work was carried out during my engineering studies at Centrale Méditerranée in collaboration with Fresnel Institute.
 
 <br>
 <div align="center">
@@ -48,15 +48,13 @@ The classifier is evaluated using a leave-one-out procedure with the first *K*=3
 | Equal weighting of all five features | $(0.2, 0.2, 0.2, 0.2, 0.2)$ | 0.91 | 0.69 | 0.85 |
 | Mean/variance-focused weighting | $(0.5, 0.5, 0.0, 0.0, 0.0)$ | 0.67 | 0.95 | 0.78 |
 
-
 These results suggest that simple linear combinations of the five regional statistics can already produce meaningful classification behavior, with different trade-offs between sensitivity and specificity.
 
+# Further reading
 
-# How to reference
+A blog article providing more technical details and context is available here:
+["Graph-structured data classification based on spectral methods and the generalized likelihood ratio test"](https://pohl-michel.github.io/blog/articles/fourier-glrt-graph-classification/article.html).
 
-If you reuse this report, these figures, or the code, please reference:
-
-Michel Pohl, *Aide au diagnostic de la maladie d'Alzheimer par une méthode de graph matching*, technical report, Centrale Méditerranée, 2016.
 
 # Acknowledgements
 
